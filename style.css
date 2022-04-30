@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-attachment: fixed;
+    background-color: hsl(257, 40%, 49%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1rem;
+}
+nav{
+    margin: 0rem 3rem;
+    margin-top: 2rem;
+}
+nav img{
+    width: auto;
+    height: 2.5rem;
+}
+section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 4em;
+    margin-top: 3em;
+}
+.image-section{
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+}
+.images{
+    height: 25rem;
+    width: auto;
+}
+.text-section{
+    width: 49%;
+    height: auto;
+}
+.text-section >h1{
+    color: aliceblue;
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+.text-section > p{
+    font-size: 1.3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: rgb(199, 197, 194);
+    padding-top: 2rem;
+}
+.text-section button{
+    height: 2.5rem;
+    width: 11rem;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    border: none;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+}
+.socialmedia{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+li{
+    list-style: none;
+    display: inline;
+    padding-right: 50px;
+}
+.fa-brands{
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid rgb(205, 209, 215);
+    padding: 0.5rem 0.6rem;
+    
+}
+
+.button:hover {
+    background-color: hsl(300, 69%, 71%);
+    transition: 0.2s;
+}
+
+/*mobile screeen*/
+@media screen and (max-width: 375px){
+    *{
+        
+        margin: 0px;
+        padding: 0px;
+        
+        
+    }
+    nav img{
+        width: auto;
+        height: 2rem;
+    }
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat:no-repeat;
+        background-size:auto;
+        background-position:top;
+        
+        
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .image-section{
+        height: 15rem;
+        width: 80%;
+        object-fit: cover;
+        margin: 0px;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 1rem;
+        margin-top: 4rem;
+    }
+    .images{
+        height:15rem;
+        width:auto;
+       
+    }
+    .text-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .text-section >h1{
+        font-size: 1.4rem;
+        padding: 0;
+        margin-top: 3rem;
+    }
+    .text-section > p{
+        text-align: center;
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .text-section button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .socialmedia{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        
+    }
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        text-align: center;
+    }
+    footer{
+        margin-top: 2rem;
+        
+        
+    }
+
+    .attribution a{
+        color: #fff;
+        color: wheat;
+        text-decoration: none;
+        
+    }
+    .button:hover {
+        background-color: hsl(300, 69%, 71%);
+        transition: 0.2s;
+    }
+
+
+};
